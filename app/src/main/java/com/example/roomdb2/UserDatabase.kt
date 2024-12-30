@@ -19,7 +19,7 @@ abstract class UserDatabase: RoomDatabase(){
                     INSTANCE = androidx.room.Room.databaseBuilder(
                         context.applicationContext,
                         UserDatabase::class.java,
-                        "user").build()
+                        "user_table").build()
                     return INSTANCE as UserDatabase
                 }
         }
