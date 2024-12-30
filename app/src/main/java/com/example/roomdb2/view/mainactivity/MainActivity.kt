@@ -77,8 +77,10 @@ class MainActivity : AppCompatActivity() {
                         roomDBViewModel.insertUser(this@MainActivity, User(0, name, age))
                         builder.dismiss()
                     }
-                    Toast.makeText(this, "Enter all fields", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
+                    else{
+                        Toast.makeText(this, "Enter all fields", Toast.LENGTH_SHORT).show()
+                        return@setOnClickListener
+                    }
                 }
             }
 
@@ -90,8 +92,10 @@ class MainActivity : AppCompatActivity() {
                         roomDBViewModel.updateUser(this@MainActivity, age, name)
                         builder.dismiss()
                     }
-                    Toast.makeText(this, "Enter all fields", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
+                    else{
+                        Toast.makeText(this, "Enter all fields", Toast.LENGTH_SHORT).show()
+                        return@setOnClickListener
+                    }
                 }
 
             }
